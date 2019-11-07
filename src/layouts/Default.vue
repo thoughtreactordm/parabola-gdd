@@ -2,7 +2,7 @@
   <div class="flex">
     <sidebar />
 
-    <main class="p-8">
+    <main class="p-8 text-white bg-gray-900">
       <slot />
     </main>
   </div>
