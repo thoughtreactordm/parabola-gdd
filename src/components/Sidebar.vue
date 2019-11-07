@@ -1,6 +1,12 @@
 <template>
   <aside class="h-screen bg-black p-4 text-white position-static">
     <nav>
+      <div class="flex flex-col justify-center items-center py-4">
+        <g-link to="/">
+          <g-image src="~/assets/img/logo_white.svg" class="logo" />
+        </g-link>
+        <small class="font-light">GAME DESIGN DOCUMENTATION</small>
+      </div>
       <ul>
         <li v-for="edge in $static.docs.edges" :key="edge.node.id">
           <g-link
@@ -54,5 +60,16 @@ aside {
   min-width: 260px;
   position: sticky;
   top: 0;
+
+  img.logo {
+    width: 100%;
+    max-width: 230px;
+    transition: all 200ms ease-in-out;
+    filter: drop-shadow(0 0 0 transparent);
+
+    &:hover {
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.85));
+    }
+  }
 }
 </style>
