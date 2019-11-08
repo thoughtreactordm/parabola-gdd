@@ -2,7 +2,7 @@
   <div class="flex">
     <sidebar />
 
-    <main class="p-8 text-white bg-gray-900">
+    <main class="p-8 text-white bg-gray-900 w-full">
       <slot />
     </main>
   </div>
@@ -64,6 +64,17 @@ body {
 
     p {
       margin-bottom: 1em;
+    }
+
+    a {
+      color: lime;
+      padding: 2px;
+      border-radius: 2px;
+
+      &:hover {
+        color: white;
+        background-color: #444;
+      }
     }
   }
 }
