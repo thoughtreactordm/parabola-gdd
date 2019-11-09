@@ -60,7 +60,7 @@ export default {
       let mainNavLinks = document.querySelectorAll(
         ".topic.active + ul .sub-topic"
       );
-      let fromTop = window.scrollY;
+      let fromTop = window.scrollY + 120;
       mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
         let allCurrent = document.querySelectorAll(".current"),
@@ -85,6 +85,7 @@ export default {
 
 <style lang="scss" scoped>
 aside {
+  flex-basis: 25%;
   min-width: 300px;
   position: sticky;
   top: 0;
@@ -123,7 +124,7 @@ aside {
       display: block;
       opacity: 0;
       position: absolute;
-      top: 7px;
+      top: 10px;
       left: -15px;
     }
 

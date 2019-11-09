@@ -1,6 +1,8 @@
 <template>
   <Layout>
     <h1>{{ $page.doc.title }}</h1>
+    <strong>Last Updated:</strong>
+    {{ $page.doc.date }}
     <div class="markdown" v-html="$page.doc.content" />
   </Layout>
 </template>
@@ -10,7 +12,7 @@ query Doc ($path: String!) {
   doc: doc (path: $path) {
     title
     path
-    date (format: "D. MMMM YYYY")
+    date (format: "MMMM D, YYYY")
     timeToRead
     content
   }
@@ -36,7 +38,7 @@ export default {
 
 <style lang="scss">
 .markdown {
-  padding-bottom: 50vh;
+  padding-bottom: 65vh;
 }
 
 span.icon.icon-link {
@@ -45,7 +47,6 @@ span.icon.icon-link {
     color: rgba(0, 255, 0, 0.5);
     width: 20px;
     padding: 0 3px;
-    margin-right: 3px;
   }
 }
 </style>
