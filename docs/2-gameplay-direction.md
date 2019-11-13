@@ -1,8 +1,8 @@
 ---
-title: Test Doc
-date: 2019-11-1 10:36:00
+title: Gameplay Direction
+date: 2019-11-7 10:36:00
 updated: 2019-11-6 10:36:00
-slug: test
+slug: gameplay-direction
 ---
 
 ## Test Heading

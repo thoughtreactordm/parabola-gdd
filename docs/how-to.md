@@ -1,6 +1,7 @@
 ---
 title: How to Use the GDD
-date: 2019-11-6 10:36:00
+date: 2019-11-12 10:36:00
+updated: 2019-11-6 10:36:00
 slug: how-to-use
 ---
 

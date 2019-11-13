@@ -1,8 +1,15 @@
 <template>
   <Layout>
     <h1>{{ $page.doc.title }}</h1>
-    <strong>Last Updated:</strong>
-    {{ $page.doc.date }}
+    <div class="mb-1">
+      <strong>Last Updated:</strong>
+      {{ $page.doc.updated }}
+    </div>
+
+    <div class="mb-1">
+      <strong>Time to Read:</strong>&nbsp;
+      <em>{{ $page.doc.timeToRead }}&nbsp;minutes</em>
+    </div>
     <div class="markdown" v-html="$page.doc.content" />
   </Layout>
 </template>
@@ -13,6 +20,7 @@ query Doc ($path: String!) {
     title
     path
     date (format: "MMMM D, YYYY")
+    updated (format: "MMMM D, YYYY")
     timeToRead
     content
   }

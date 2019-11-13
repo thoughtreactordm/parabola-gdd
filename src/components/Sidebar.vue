@@ -13,7 +13,7 @@
             :to="edge.node.path"
             class="topic uppercase font-bold hover:text-green-300"
           >{{ edge.node.title }}</g-link>
-          <ul>
+          <ul class="mb-2">
             <li v-for="heading in edge.node.headings" :key="heading.anchor" class="pl-6">
               <a
                 :href="'/' + edge.node.slug + heading.anchor"
@@ -129,6 +129,8 @@ aside {
     }
 
     &.current {
+      color: white;
+
       &:after {
         opacity: 1;
       }
