@@ -10,7 +10,7 @@
     "@gridsome/remark-prismjs": "^0.3.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-algolia": "^2.1.2",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
